@@ -1,14 +1,33 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.wilo.reports" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <preference name="loglevel" value="DEBUG" />
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <allow-intent href="market:*" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="10000" />
+    <preference name="orientation" value="landscape" />
     <name>WiloReports</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+       Latest reports from the wiloreports monitoring system.
     </description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+        Devicesmart Software Team
     </author>
+    <platform name="android">
+        <splash density="land-hdpi" src="res/drawable-hdpi/screen.png" />
+        <splash density="land-ldpi" src="res/drawable-ldpi/screen.png" />
+        <splash density="land-mdpi" src="res/drawable-mdpi/screen.png" />
+         <splash density="land-xhdpi" src="res/drawable-xhdpi/screen.png" />
+    </platform>
+   
     <content src="index.html" />
-    <plugin name="cordova-plugin-whitelist" version="1" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -16,11 +35,8 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <platform name="android">
-        <allow-intent href="market:*" />
-    </platform>
-    <platform name="ios">
-        <allow-intent href="itms:*" />
-        <allow-intent href="itms-apps:*" />
-    </platform>
+    <access launch-external="yes" origin="http://*" />
+    <access launch-external="yes" origin="https://*" />
+    <access launch-external="yes" origin="*" />
+    
 </widget>
