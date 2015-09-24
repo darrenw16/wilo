@@ -12,6 +12,7 @@
     <allow-intent href="market:*" />
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="10000" />
+    <preference name="orientation" value="landscape" />
     <name>WiloReports</name>
     <description>
        Latest reports from the wiloreports monitoring system.
@@ -23,6 +24,7 @@
         <splash density="land-hdpi" src="res/drawable-hdpi/screen.png" />
         <splash density="land-ldpi" src="res/drawable-ldpi/screen.png" />
         <splash density="land-mdpi" src="res/drawable-mdpi/screen.png" />
+         <splash density="land-xhdpi" src="res/drawable-xhdpi/screen.png" />
     </platform>
    
     <content src="index.html" />
