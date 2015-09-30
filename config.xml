@@ -24,13 +24,12 @@
         Devicesmart Software Team
     </author>
 	
+	<gap:splash src="screendpi.png" gap:platform="android" gap:qualifier="ldpi" />
+	<gap:splash src="screenmdpi.png" gap:platform="android" gap:qualifier="mdpi" />
+	<gap:splash src="screenhdpi.png" gap:platform="android" gap:qualifier="hdpi" />
+	<gap:splash src="screenxhdpi.png" gap:platform="android" gap:qualifier="xhdpi" />
 	
-    <platform name="android">
-        <splash density="land-hdpi" src="res/drawable-hdpi/screen.png" />
-        <splash density="land-ldpi" src="res/drawable-ldpi/screen.png" />
-        <splash density="land-mdpi" src="res/drawable-mdpi/screen.png" />
-         <splash density="land-xhdpi" src="res/drawable-xhdpi/screen.png" />
-    </platform>
+   
    
     <content src="index.html" />
     <access origin="*" />
